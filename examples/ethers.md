@@ -65,7 +65,7 @@ Retrieve the balance in both Wei and Eth:
 balance = client.invoke(
     uri=ethers_core_uri,
     method="getBalance",
-    args={"address": "0x00000000219ab540356cbb839cbe05303d7705fa"}
+    args={"address": "0x0a502f846F6dc2e3D4d8C595B18b3AF44657B1bD"}
 )
 print(f"Balance in Wei: {balance}")
 assert int(balance) > 0
@@ -91,8 +91,8 @@ domain_data = {
     "verifyingContract": "0xCcCCccccCCCCcCCCCCCcCcCccCcCCCcCcccccccC"
 }
 message = {
-    "from": {"name": "Cow", "wallet": "0xCD2a3d9F938E13CD947Ec05AbC7FE734Df8DD826"},
-    "to": {"name": "Bob", "wallet": "0xbBbBBBBbbBBBbbbBbbBbbbbBBbBbbbbBbBbbBBbB"},
+    "from": {"name": "Cow", "wallet": "0x0a502f846F6dc2e3D4d8C595B18b3AF44657B1bD"},
+    "to": {"name": "Bob", "wallet": "0x0a502f846F6dc2e3D4d8C595B18b3AF44657B1bD"},
     "contents": "Hello, Bob!"
 }
 types = {
